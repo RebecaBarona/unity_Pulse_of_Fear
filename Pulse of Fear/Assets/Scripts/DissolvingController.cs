@@ -20,6 +20,10 @@ public class DissolvingController : MonoBehaviour
     void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
+        for (int i = 0; i < materials.Length; i++)
+        {
+            materials[i].SetFloat("_DissolveAmount", 0);
+        }
     }
 
     // Update is called once per frame

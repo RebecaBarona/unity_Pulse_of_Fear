@@ -40,12 +40,12 @@ public class FloatingText : MonoBehaviour
     void Update()
     {
         float distance = Vector3.Distance(transform.position, Player.transform.position);
-        Debug.Log(distance);
+      
         if(distance <= 2.5f)
         {     
             if (isFading && floatingText.color.a <= 0.0f)
             {
-                //Debug.Log("Text fading is complete!");
+              
                 isFading = false;
                 floatingText.gameObject.SetActive(false);
             }
