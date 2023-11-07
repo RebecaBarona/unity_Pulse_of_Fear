@@ -8,6 +8,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
+  - enabled: 1
+    path: Assets/02_Scenes/Gamze/02_LobbyandCity.unity
+    guid: 4a3e744c4c16a4946a24e38777bbb592
+  - enabled: 1
+    path: Assets/02_Scenes/Gamze/03_City.unity
+    guid: 12665ef7c180574448d08bd58680410a
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 40aa6a57398f34b49998a54adb846664, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 3eae15b20d4b05a4c99abab6c94f597c, type: 2}
