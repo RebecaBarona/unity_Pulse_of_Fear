@@ -898,6 +898,7 @@ MonoBehaviour:
   audioClip: {fileID: 0}
   timer: 20
   fadeDuration: 10
+  distanceRequired: 4.5
 --- !u!82 &635683622
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1140,6 +1141,7 @@ MonoBehaviour:
   audioClip: {fileID: 0}
   timer: 20
   fadeDuration: 10
+  distanceRequired: 4.5
 --- !u!82 &853060856
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2752,3 +2754,4 @@ MonoBehaviour:
   audioClip: {fileID: 0}
   timer: 20
   fadeDuration: 10
+  distanceRequired: 4.5

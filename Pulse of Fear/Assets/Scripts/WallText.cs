@@ -22,6 +22,8 @@ public class WallText : MonoBehaviour
 
     bool isFading = false;
 
+    [SerializeField] float distanceRequired;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,7 +47,7 @@ public class WallText : MonoBehaviour
     {
         float distance = Vector3.Distance(transform.position, Player.transform.position);
 
-        if (distance <= 5.5f)
+        if (distance <= distanceRequired)
         {
             if (!isFading && !floatingText.gameObject.activeSelf)
             {
