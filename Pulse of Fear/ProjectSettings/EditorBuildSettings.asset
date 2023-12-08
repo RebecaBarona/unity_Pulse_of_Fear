@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
   - enabled: 1
-    path: Assets/Level/02_Scenes/Gamze/02_LobbyandCity.unity
+    path: Assets/02_Scenes/Gamze/02_LobbyandCity.unity
     guid: 4a3e744c4c16a4946a24e38777bbb592
   - enabled: 1
     path: Assets/Level/02_Scenes/Gamze/City.unity
