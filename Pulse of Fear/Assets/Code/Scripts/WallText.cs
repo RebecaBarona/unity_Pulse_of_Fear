@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WallText : MonoBehaviour
 {
@@ -12,11 +13,9 @@ public class WallText : MonoBehaviour
     [SerializeField] string textContent;
     [SerializeField] Color textColor;
     [SerializeField] float textStartAlpha;
+    [SerializeField] Image textBG;
 
     [Header("Audio Properties")]
-    [SerializeField] AudioSource audioSource;
-    [SerializeField] AudioClip audioClip;
-
     [SerializeField] float timer = 20;
     public float fadeDuration;
 
@@ -32,9 +31,9 @@ public class WallText : MonoBehaviour
         floatingText.text = textContent;
         textColor = floatingText.color;
         textStartAlpha = textColor.a;
-        audioSource = GetComponent<AudioSource>();
-        audioSource.clip = audioClip;
-
+     
+        textBG = GetComponentInChildren<Image>();
+        textBG.gameObject.SetActive(false);
         // Set initial alpha to 0
         Color initialColor = floatingText.color;
         initialColor.a = 0f;
@@ -53,13 +52,8 @@ public class WallText : MonoBehaviour
             {
                 StartFade();
             }
-        }
-        else if (audioClip != null && !audioSource.isPlaying)
-        {
-            if (!isFading && !floatingText.gameObject.activeSelf)
-            {
-                StartFade();
-            }
+      
+        
         }
     }
 
@@ -67,7 +61,7 @@ public class WallText : MonoBehaviour
     {
         isFading = true;
         floatingText.gameObject.SetActive(true); // Show text before fading
-
+        textBG.gameObject.SetActive(true);
         StartCoroutine(FadeText());
     }
 
