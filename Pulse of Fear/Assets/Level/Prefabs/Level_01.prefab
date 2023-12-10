@@ -220,7 +220,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2185621126541533673
 Transform:
@@ -980,6 +980,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: mdl_road_01
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d67625bbbbe53e14b9a5edb602f9b929, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1045,6 +1049,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 61ccdabb76f2ab440974121a3112a27d, type: 3}
       propertyPath: m_Name
       value: mdl_bld_apartment_05
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 61ccdabb76f2ab440974121a3112a27d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1541,6 +1549,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e40300d97b6952b4a8dceb127b68ede4, type: 3}
       propertyPath: m_Name
       value: mdl_bld_apartment_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e40300d97b6952b4a8dceb127b68ede4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
