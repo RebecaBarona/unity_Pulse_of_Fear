@@ -17,7 +17,10 @@ public class PlayTextAudio : MonoBehaviour
     {
         if (audioSource != null)
         {
-            audioSource.Play();
+            if(other.gameObject.tag == "Player")
+            {
+                audioSource.Play();
+            }
         }
     }
 
