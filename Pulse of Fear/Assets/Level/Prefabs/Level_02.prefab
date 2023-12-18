@@ -179,6 +179,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 088ee4ff057a72f48a47eb034698c9ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Train: {fileID: 0}
+  trainStartPos: {x: 0, y: 0, z: 0}
+  trainEndPos: {x: 0, y: 0, z: 0}
 --- !u!1001 &40663341597680295
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -559,7 +562,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: e40300d97b6952b4a8dceb127b68ede4, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: aa727539819df2343abf86033485e40d, type: 2}
+      objectReference: {fileID: 2100000, guid: 8243265bc03d69747a46d323c5ce6e75, type: 2}
     - target: {fileID: 919132149155446097, guid: e40300d97b6952b4a8dceb127b68ede4, type: 3}
       propertyPath: m_Name
       value: mdl_bld_apartment_03
@@ -1143,7 +1146,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0bb954bd7cc7e7e4bb393aeb14409028, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.9455044
+      value: -1.91
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0bb954bd7cc7e7e4bb393aeb14409028, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1151,27 +1154,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0bb954bd7cc7e7e4bb393aeb14409028, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.9942274
+      value: 5.33
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0bb954bd7cc7e7e4bb393aeb14409028, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0bb954bd7cc7e7e4bb393aeb14409028, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0bb954bd7cc7e7e4bb393aeb14409028, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0bb954bd7cc7e7e4bb393aeb14409028, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0bb954bd7cc7e7e4bb393aeb14409028, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 270
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0bb954bd7cc7e7e4bb393aeb14409028, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1179,12 +1182,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0bb954bd7cc7e7e4bb393aeb14409028, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 0bb954bd7cc7e7e4bb393aeb14409028, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: aa727539819df2343abf86033485e40d, type: 2}
+      objectReference: {fileID: 2100000, guid: dc0f3a253d8582b41b018ccd76df65d6, type: 2}
     - target: {fileID: 919132149155446097, guid: 0bb954bd7cc7e7e4bb393aeb14409028, type: 3}
       propertyPath: m_Name
       value: mdl_bld_apartment_02
@@ -1295,11 +1298,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 30d4f77e4f56a1245bbf3a36ed623db2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.23
+      value: 8.02
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 30d4f77e4f56a1245bbf3a36ed623db2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.3156886
+      value: 5.29
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 30d4f77e4f56a1245bbf3a36ed623db2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1307,36 +1310,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 30d4f77e4f56a1245bbf3a36ed623db2, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 30d4f77e4f56a1245bbf3a36ed623db2, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 30d4f77e4f56a1245bbf3a36ed623db2, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 30d4f77e4f56a1245bbf3a36ed623db2, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 30d4f77e4f56a1245bbf3a36ed623db2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 270
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 30d4f77e4f56a1245bbf3a36ed623db2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 30d4f77e4f56a1245bbf3a36ed623db2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 30d4f77e4f56a1245bbf3a36ed623db2, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: aa727539819df2343abf86033485e40d, type: 2}
+      objectReference: {fileID: 2100000, guid: e0647073816a3b441acc75469d7b8f00, type: 2}
     - target: {fileID: 919132149155446097, guid: 30d4f77e4f56a1245bbf3a36ed623db2, type: 3}
       propertyPath: m_Name
       value: mdl_bld_apartment_01 (1)
@@ -1369,35 +1372,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d55160d5ba126dd41a557b5b212d3cff, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.824336
+      value: -8.03
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d55160d5ba126dd41a557b5b212d3cff, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.2667456
+      value: 5.31
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d55160d5ba126dd41a557b5b212d3cff, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.9261122
+      value: -3.01
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d55160d5ba126dd41a557b5b212d3cff, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 0.6903456
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d55160d5ba126dd41a557b5b212d3cff, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: -0.15304585
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d55160d5ba126dd41a557b5b212d3cff, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7071068
+      value: -0.6903456
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d55160d5ba126dd41a557b5b212d3cff, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -0.15304585
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d55160d5ba126dd41a557b5b212d3cff, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -25
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d55160d5ba126dd41a557b5b212d3cff, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1410,7 +1413,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: d55160d5ba126dd41a557b5b212d3cff, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: aa727539819df2343abf86033485e40d, type: 2}
+      objectReference: {fileID: 2100000, guid: aa88b05b34b081f4b84c61361eec047f, type: 2}
     - target: {fileID: 919132149155446097, guid: d55160d5ba126dd41a557b5b212d3cff, type: 3}
       propertyPath: m_Name
       value: mdl_bld_apartment_04
