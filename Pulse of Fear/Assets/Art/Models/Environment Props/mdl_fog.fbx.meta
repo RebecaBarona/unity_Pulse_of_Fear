@@ -3,7 +3,12 @@ guid: 39437fc85820f1a4a95013371d7f52b8
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fog
+    second: {fileID: 2100000, guid: c2d4aafe7b225b744a1bc7a920e53958, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
