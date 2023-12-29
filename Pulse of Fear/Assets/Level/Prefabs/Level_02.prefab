@@ -37,7 +37,7 @@ Transform:
   - {fileID: 4621622086871289019}
   - {fileID: 6728785195647913607}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6216759723006925399
 GameObject:
@@ -1562,6 +1562,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 5889088046f02b64aba3ade603390470, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 18d119c4f8313c546a197f021efcf50e, type: 2}
     - target: {fileID: 919132149155446097, guid: 5889088046f02b64aba3ade603390470, type: 3}
       propertyPath: m_Name
       value: mdl_floor_02
