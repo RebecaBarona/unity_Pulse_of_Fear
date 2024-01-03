@@ -6,6 +6,7 @@ public class PlayTextAudio : MonoBehaviour
 {
     [SerializeField] AudioSource audioSource;
     [SerializeField] AudioClip audioClip;
+    [SerializeField] bool playSound = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,8 +18,9 @@ public class PlayTextAudio : MonoBehaviour
     {
         if (audioSource != null)
         {
-            if(other.gameObject.tag == "Player")
+            if (other.gameObject.tag == "Player" && !playSound)
             {
+                playSound = true;
                 audioSource.Play();
             }
         }
