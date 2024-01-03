@@ -7,6 +7,7 @@ public class PlayTextAudio : MonoBehaviour
     [SerializeField] AudioSource audioSource;
     [SerializeField] AudioClip audioClip;
     [SerializeField] bool playSound = false;
+    [SerializeField] WallText wallText;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +32,7 @@ public class PlayTextAudio : MonoBehaviour
         if(audioSource != null)
         {
             audioSource.Stop();
+            wallText.DisappearText();
         }
     }
 }

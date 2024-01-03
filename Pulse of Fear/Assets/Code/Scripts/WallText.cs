@@ -59,9 +59,9 @@ public class WallText : MonoBehaviour
         }
     }
 
-    IEnumerator DisappearText()
+    public IEnumerator DisappearText()
     {
-        yield return new WaitForSeconds(15);
+        yield return new WaitForSeconds(5);
         floatingText.gameObject.SetActive(false);
         textBG.gameObject.SetActive(false);
 
