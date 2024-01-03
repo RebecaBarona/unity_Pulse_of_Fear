@@ -862,6 +862,33 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1291337821496049415, guid: 6b1612550500f3e478befe84b1df236c, type: 3}
+--- !u!1 &950492713 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8428115502907604299, guid: ded462cc6ec703e42bc562b066a96944, type: 3}
+  m_PrefabInstance: {fileID: 1029787719}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &950492717
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950492713}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4679390504295679099, guid: 90dd4646ceaee8342b41eb3cea61eda5, type: 3}
 --- !u!1 &1018084925
 GameObject:
   m_ObjectHideFlags: 0
@@ -998,11 +1025,11 @@ PrefabInstance:
       objectReference: {fileID: 1181239740}
     - target: {fileID: 2476187470989852021, guid: ded462cc6ec703e42bc562b066a96944, type: 3}
       propertyPath: m_Size.z
-      value: 1.8568903
+      value: 3.0521429
       objectReference: {fileID: 0}
     - target: {fileID: 2476187470989852021, guid: ded462cc6ec703e42bc562b066a96944, type: 3}
       propertyPath: m_Center.z
-      value: 0.5852862
+      value: 1.1829127
       objectReference: {fileID: 0}
     - target: {fileID: 3626910166876843777, guid: ded462cc6ec703e42bc562b066a96944, type: 3}
       propertyPath: NextLevelPrefab
@@ -1012,21 +1039,29 @@ PrefabInstance:
       propertyPath: NextLevelPrefab
       value: 
       objectReference: {fileID: 1374487096}
+    - target: {fileID: 3934976271481924193, guid: ded462cc6ec703e42bc562b066a96944, type: 3}
+      propertyPath: textContent
+      value: I liked that top when ou wore it on our date.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3934976271481924193, guid: ded462cc6ec703e42bc562b066a96944, type: 3}
+      propertyPath: distanceRequired
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5381163532320834997, guid: ded462cc6ec703e42bc562b066a96944, type: 3}
       propertyPath: m_Size.x
       value: 154.65901
       objectReference: {fileID: 0}
     - target: {fileID: 5381163532320834997, guid: ded462cc6ec703e42bc562b066a96944, type: 3}
       propertyPath: m_Size.z
-      value: 2.492288
+      value: 2.4975798
       objectReference: {fileID: 0}
     - target: {fileID: 5381163532320834997, guid: ded462cc6ec703e42bc562b066a96944, type: 3}
       propertyPath: m_Center.x
-      value: 46.564056
+      value: 46.56406
       objectReference: {fileID: 0}
     - target: {fileID: 5381163532320834997, guid: ded462cc6ec703e42bc562b066a96944, type: 3}
       propertyPath: m_Center.z
-      value: 0.46052036
+      value: 0.46315363
       objectReference: {fileID: 0}
     - target: {fileID: 5591513919166630614, guid: ded462cc6ec703e42bc562b066a96944, type: 3}
       propertyPath: m_Name
@@ -1039,6 +1074,22 @@ PrefabInstance:
     - target: {fileID: 5750566954374532372, guid: ded462cc6ec703e42bc562b066a96944, type: 3}
       propertyPath: MinDistance
       value: 1.0006202
+      objectReference: {fileID: 0}
+    - target: {fileID: 5906622850087787222, guid: ded462cc6ec703e42bc562b066a96944, type: 3}
+      propertyPath: m_Size.z
+      value: 3.55422
+      objectReference: {fileID: 0}
+    - target: {fileID: 5906622850087787222, guid: ded462cc6ec703e42bc562b066a96944, type: 3}
+      propertyPath: m_Center.x
+      value: 20.057346
+      objectReference: {fileID: 0}
+    - target: {fileID: 5906622850087787222, guid: ded462cc6ec703e42bc562b066a96944, type: 3}
+      propertyPath: m_Center.y
+      value: -0.34029797
+      objectReference: {fileID: 0}
+    - target: {fileID: 5906622850087787222, guid: ded462cc6ec703e42bc562b066a96944, type: 3}
+      propertyPath: m_Center.z
+      value: 0.25252998
       objectReference: {fileID: 0}
     - target: {fileID: 6106103985087743016, guid: ded462cc6ec703e42bc562b066a96944, type: 3}
       propertyPath: distanceRequired
@@ -1054,7 +1105,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8500249744739073854, guid: ded462cc6ec703e42bc562b066a96944, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.32
+      value: 0.17
       objectReference: {fileID: 0}
     - target: {fileID: 9015412096035944978, guid: ded462cc6ec703e42bc562b066a96944, type: 3}
       propertyPath: m_Enabled
@@ -1111,7 +1162,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8428115502907604299, guid: ded462cc6ec703e42bc562b066a96944, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 950492717}
   m_SourcePrefab: {fileID: 100100000, guid: ded462cc6ec703e42bc562b066a96944, type: 3}
 --- !u!114 &1029787720 stripped
 MonoBehaviour:
@@ -3330,6 +3384,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 18d119c4f8313c546a197f021efcf50e, type: 2}
+    - target: {fileID: 4873409182947613744, guid: e76747ed0ea9db64eb7cd7a524d011e3, type: 3}
+      propertyPath: wallText
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7010372235223862538, guid: e76747ed0ea9db64eb7cd7a524d011e3, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -3363,7 +3421,9 @@ PrefabInstance:
       value: -7.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2235616210105717504, guid: e76747ed0ea9db64eb7cd7a524d011e3, type: 3}
+    - {fileID: 7788525169462446383, guid: e76747ed0ea9db64eb7cd7a524d011e3, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3259054450193848149, guid: e76747ed0ea9db64eb7cd7a524d011e3, type: 3}

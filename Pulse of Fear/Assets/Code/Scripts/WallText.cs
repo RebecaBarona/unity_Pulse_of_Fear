@@ -48,8 +48,6 @@ public class WallText : MonoBehaviour
 
         if (distance <= distanceRequired)
         {
-            floatingText.gameObject.SetActive(true);
-            textBG.gameObject.SetActive(true);
             if (!isFading && !floatingText.gameObject.activeSelf)
             {
                 StartFade();

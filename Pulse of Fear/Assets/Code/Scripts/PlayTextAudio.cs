@@ -32,7 +32,7 @@ public class PlayTextAudio : MonoBehaviour
         if(audioSource != null)
         {
             audioSource.Stop();
-            wallText.DisappearText();
+            StartCoroutine(wallText.DisappearText());
         }
     }
 }
