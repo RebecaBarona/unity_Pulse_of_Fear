@@ -440,7 +440,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 5e601ec81643f9f4c9ae0069366ff57e, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 313a819c55296514682b984fd1bfe4e0, type: 2}
+      objectReference: {fileID: 2100000, guid: ff703f0300bf88a4b9153b5980d0a238, type: 2}
     - target: {fileID: 919132149155446097, guid: 5e601ec81643f9f4c9ae0069366ff57e, type: 3}
       propertyPath: m_Name
       value: mdl_building_01
@@ -929,6 +929,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 6b1612550500f3e478befe84b1df236c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ff703f0300bf88a4b9153b5980d0a238, type: 2}
     - target: {fileID: 919132149155446097, guid: 6b1612550500f3e478befe84b1df236c, type: 3}
       propertyPath: m_Name
       value: mdl_stairs
@@ -1274,10 +1278,22 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 313a819c55296514682b984fd1bfe4e0, type: 2}
+    - target: {fileID: -6788294586181175822, guid: d4385e3332bf09149a4784a02f3fe03f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d385e38feaa9e354e88317f175d75095, type: 2}
+    - target: {fileID: -4726616002122080486, guid: d4385e3332bf09149a4784a02f3fe03f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d385e38feaa9e354e88317f175d75095, type: 2}
     - target: {fileID: 919132149155446097, guid: d4385e3332bf09149a4784a02f3fe03f, type: 3}
       propertyPath: m_Name
       value: mdl_elevator_01
       objectReference: {fileID: 0}
+    - target: {fileID: 7996505111809758394, guid: d4385e3332bf09149a4784a02f3fe03f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d385e38feaa9e354e88317f175d75095, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1661,6 +1677,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: d1e0e036ad5056d4c8abd68d023e2fca, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ff703f0300bf88a4b9153b5980d0a238, type: 2}
     - target: {fileID: 919132149155446097, guid: d1e0e036ad5056d4c8abd68d023e2fca, type: 3}
       propertyPath: m_Name
       value: mdl_door
@@ -2230,7 +2250,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 99f39f5a026aee643b6ebe385e2cff5b, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 313a819c55296514682b984fd1bfe4e0, type: 2}
+      objectReference: {fileID: 2100000, guid: ff703f0300bf88a4b9153b5980d0a238, type: 2}
     - target: {fileID: 919132149155446097, guid: 99f39f5a026aee643b6ebe385e2cff5b, type: 3}
       propertyPath: m_Name
       value: mdl_basiccube (2)
