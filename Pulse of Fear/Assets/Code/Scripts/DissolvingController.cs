@@ -42,7 +42,7 @@ public class DissolvingController : MonoBehaviour
 
     public void dissolveCharacter()
     {
-        StartCoroutine(DissolveMaterial(4.5f));
+        StartCoroutine(DissolveMaterial(10f));
     }
      IEnumerator DissolveMaterial(float time)
     {

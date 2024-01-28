@@ -13,7 +13,7 @@ public class DissolveScript : MonoBehaviour
 
         if (spriteRenderer == null)
         {
-            Debug.LogError("DissolveScript requires a SpriteRenderer component!");
+      //      Debug.LogError("DissolveScript requires a SpriteRenderer component!");
             enabled = false;  // Disable the script if the required components are not present
         }
 

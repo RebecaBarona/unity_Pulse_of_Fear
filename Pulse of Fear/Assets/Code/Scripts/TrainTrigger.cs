@@ -7,6 +7,8 @@ public class TrainTrigger : MonoBehaviour
     [SerializeField] GameObject Train;
     [SerializeField] Vector3 trainStartPos;
    [SerializeField] Vector3 trainEndPos;
+
+    public bool stopped = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,11 +24,16 @@ public class TrainTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Player")
+        if (stopped && other.gameObject.tag == "Player")
+        {
+            Train.GetComponent<Animator>().SetBool("MoveTrain", false);
+        }
+        if(other.gameObject.tag == "Player" && stopped == false)
         {
             Train.SetActive(true);
             Train.GetComponent<Animator>().SetBool("MoveTrain",true);
-            Debug.LogError("Train Has come");
+            //    Debug.LogError("Train Has come");
+            stopped = true;
         }
     }
 

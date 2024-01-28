@@ -5,7 +5,7 @@ public class PlayTextAudio : MonoBehaviour
     [SerializeField] AudioSource audioSource;
     [SerializeField] AudioClip audioClip;
     
-    private bool hasPlayed = false;
+    public bool hasPlayed = false;
  
 
     void Start()

@@ -21,6 +21,7 @@ public class WallTextDissolve : MonoBehaviour
     bool isFading = false;
 
     [SerializeField] float distanceRequired;
+    [SerializeField] PlayTextAudio playTextAudio;
 
     // Start is called before the first frame update
     // Start is called before the first frame update
@@ -29,10 +30,10 @@ public class WallTextDissolve : MonoBehaviour
 
         player = GameObject.FindGameObjectWithTag("Player");
         spriteRenderer = GetComponent<SpriteRenderer>();
-
+        playTextAudio = GetComponent<PlayTextAudio>();
         if (spriteRenderer == null)
         {
-            Debug.LogError("DissolveScript requires a SpriteRenderer component!");
+          //  Debug.LogError("DissolveScript requires a SpriteRenderer component!");
             enabled = false;  // Disable the script if the required components are not present
         }
 
@@ -50,7 +51,7 @@ public class WallTextDissolve : MonoBehaviour
     {
         float distance = Vector3.Distance(transform.position, player.transform.position);
         //  Debug.Log(distance);
-        if (distance <= distanceRequired)
+        if (distance <= distanceRequired && playTextAudio.hasPlayed == true)
         {
             // Additional logic if needed when player is within distance
             PlayDisappear();
