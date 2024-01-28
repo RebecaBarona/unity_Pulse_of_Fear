@@ -13,6 +13,7 @@ public class PlayTextAudio : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = audioClip;
         Debug.Log("started" + this.gameObject);
+        Debug.Log("PlayTextAudio started on: " + gameObject.name);
     }
 
     private void OnTriggerEnter(Collider other)
