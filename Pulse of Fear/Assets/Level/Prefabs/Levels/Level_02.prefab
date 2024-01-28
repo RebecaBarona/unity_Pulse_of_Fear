@@ -3217,37 +3217,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5889088046f02b64aba3ade603390470, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8501071770231564463}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5889088046f02b64aba3ade603390470, type: 3}
---- !u!1 &5928688478755620270 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5889088046f02b64aba3ade603390470, type: 3}
-  m_PrefabInstance: {fileID: 6811561478909540607}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &8501071770231564463
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5928688478755620270}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 9.999992, y: 8.078849, z: 6.0000024}
-  m_Center: {x: 4.999996, y: 4.0394244, z: -3.0000012}
 --- !u!4 &6416853686552518420 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5889088046f02b64aba3ade603390470, type: 3}
@@ -3514,6 +3485,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: -0.34445488
       objectReference: {fileID: 0}
+    - target: {fileID: 2902447771532843856, guid: 6021063ac64acfb44b78d53fa1943076, type: 3}
+      propertyPath: audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: dbdec475be54a97469b4976c57097f80, type: 3}
     - target: {fileID: 3900995178859416966, guid: 6021063ac64acfb44b78d53fa1943076, type: 3}
       propertyPath: m_Name
       value: AudioTrigger
