@@ -57,14 +57,6 @@ public class WallText : MonoBehaviour
         }
     }
 
-    public IEnumerator DisappearText()
-    {
-        yield return new WaitForSeconds(5);
-        floatingText.gameObject.SetActive(false);
-        textBG.gameObject.SetActive(false);
-
-    }
-
     private void StartFade()
     {
         isFading = true;

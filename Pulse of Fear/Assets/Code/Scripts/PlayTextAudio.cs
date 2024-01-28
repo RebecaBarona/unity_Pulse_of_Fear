@@ -1,38 +1,39 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayTextAudio : MonoBehaviour
 {
     [SerializeField] AudioSource audioSource;
     [SerializeField] AudioClip audioClip;
-    [SerializeField] bool playSound = false;
-    [SerializeField] WallText wallText;
-    // Start is called before the first frame update
+    
+    private bool hasPlayed = false;
+ 
+
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = audioClip;
+        Debug.Log("started" + this.gameObject);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (audioSource != null)
+        if (audioSource != null && !hasPlayed)
         {
-            if (other.gameObject.tag == "Player" && !playSound)
+            if (other.gameObject.CompareTag("Player"))
             {
-                playSound = true;
                 audioSource.Play();
+                hasPlayed = true;
+
+            
             }
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if(audioSource != null)
+        if (audioSource != null)
         {
             audioSource.Stop();
-            StartCoroutine(wallText.DisappearText());
         }
     }
 }

@@ -35,14 +35,19 @@ public class DissolvingController : MonoBehaviour
         {
             if(!isDisolving)
             {
-                StartCoroutine(DissolveMaterial());
+               // StartCoroutine(DissolveMaterial());
             }
         }
     }
 
-     IEnumerator DissolveMaterial()
+    public void dissolveCharacter()
     {
-        isDisolving = true;
+        StartCoroutine(DissolveMaterial(4.5f));
+    }
+     IEnumerator DissolveMaterial(float time)
+    {
+        yield return new WaitForSeconds(time);
+     //   isDisolving = true;
         if(materials.Length > 0)
         {
             float timer = 0;

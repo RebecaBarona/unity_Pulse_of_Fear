@@ -1,28 +1,32 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ChangeLevel : MonoBehaviour
 {
     [SerializeField] GameObject NextLevelPrefab;
     [SerializeField] GameObject CurrentLevelPrefab;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+  //  [SerializeField] Animator FadeAnim;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    private bool hasLevelChanged = false;
+
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (!hasLevelChanged && other.gameObject.tag == "Player")
         {
-            NextLevelPrefab.SetActive(true);
-            CurrentLevelPrefab.SetActive(false);
+        //    FadeAnim.SetBool("fade", true);
+            StartCoroutine(LevelChange());
+            hasLevelChanged = true; // Set the flag to true to prevent further level changes
         }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        
+    }
+    private IEnumerator LevelChange()
+    {
+        yield return new WaitForSeconds(1);
+        NextLevelPrefab.SetActive(true);
+        CurrentLevelPrefab.SetActive(false);
+      //  FadeAnim.SetBool("fade", false);
     }
 }
