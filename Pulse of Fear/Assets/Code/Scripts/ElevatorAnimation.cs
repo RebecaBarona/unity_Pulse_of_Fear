@@ -42,13 +42,13 @@ public class ElevatorAnimation : MonoBehaviour
         dissolve.GetComponent<DissolvingController>().dissolveCharacter();
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.tag == "Player")
-        {
-            elevator.SetBool("open", false);
-            //    char1.SetBool("anim", false);
-            char2.SetBool("anim", false);
-        }
-    }
+    //private void OnTriggerExit(Collider other)
+    //{
+    //    if (other.gameObject.tag == "Player")
+    //    {
+    //        elevator.SetBool("open", false);
+    //        //    char1.SetBool("anim", false);
+    //        char2.SetBool("anim", false);
+    //    }
+    //}
 }
