@@ -8133,7 +8133,7 @@ GameObject:
   - component: {fileID: 5300774821614308869}
   - component: {fileID: 81504870472570198}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: CircleEye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8147,8 +8147,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8335274442485755168}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.942, y: -0.324, z: -4.931}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalPosition: {x: 2.996, y: 0.181, z: -4.676}
+  m_LocalScale: {x: 0.09000001, y: 0.09000001, z: 0.09000001}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 6484354633760205775}
@@ -8174,7 +8174,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1df67264dea487240b21d959d953b097, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9030,7 +9030,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b27ee9f556cd8ee468d38f7b97c8ec6d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.973
+      value: 5.125
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b27ee9f556cd8ee468d38f7b97c8ec6d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9038,7 +9038,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b27ee9f556cd8ee468d38f7b97c8ec6d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.281
+      value: -4.241
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b27ee9f556cd8ee468d38f7b97c8ec6d, type: 3}
       propertyPath: m_LocalRotation.w
