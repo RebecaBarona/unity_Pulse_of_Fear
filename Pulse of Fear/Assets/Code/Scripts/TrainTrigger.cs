@@ -39,4 +39,9 @@ public class TrainTrigger : MonoBehaviour
       
     }
 
+    public void DoorClose()
+    {
+        Train.GetComponent<Animator>().SetBool("MoveTrain", false);
+    }
+
 }

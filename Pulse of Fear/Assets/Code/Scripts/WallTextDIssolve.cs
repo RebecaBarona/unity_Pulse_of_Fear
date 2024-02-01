@@ -95,7 +95,7 @@ public class WallTextDissolve : MonoBehaviour
         yield return new WaitForSeconds(2);
 
         // Call the DisappearText function
-        DisappearText();
+      //  DisappearText();
     }
 
 
