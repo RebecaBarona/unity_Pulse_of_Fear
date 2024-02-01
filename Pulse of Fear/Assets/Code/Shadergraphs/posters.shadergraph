@@ -1203,9 +1203,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -452.0000915527344,
-            "y": -198.99996948242188,
-            "width": 207.99996948242188,
+            "x": -412.9999694824219,
+            "y": -221.99998474121095,
+            "width": 207.99998474121095,
             "height": 325.9999694824219
         }
     },
@@ -1820,7 +1820,7 @@
         "x"
     ],
     "m_Precision": 0,
-    "m_PreviewExpanded": false,
+    "m_PreviewExpanded": true,
     "m_DismissedVersion": 0,
     "m_PreviewMode": 0,
     "m_CustomColors": {
@@ -2648,7 +2648,7 @@
         "tex2d"
     ],
     "m_Precision": 0,
-    "m_PreviewExpanded": false,
+    "m_PreviewExpanded": true,
     "m_DismissedVersion": 0,
     "m_PreviewMode": 0,
     "m_CustomColors": {
@@ -2737,7 +2737,7 @@
         "animation"
     ],
     "m_Precision": 0,
-    "m_PreviewExpanded": false,
+    "m_PreviewExpanded": true,
     "m_DismissedVersion": 0,
     "m_PreviewMode": 0,
     "m_CustomColors": {
@@ -2795,9 +2795,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1654.0001220703125,
-            "y": -3.999987840652466,
-            "width": 123.9998779296875,
+            "x": -1654.0,
+            "y": -3.999998092651367,
+            "width": 124.0,
             "height": 173.00001525878907
         }
     },
