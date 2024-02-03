@@ -1393,6 +1393,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: train_extra_20
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: f1c7d6f540e8f58449be7c0590bbc802, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 5dc1c0b5680099d4fb7dde38ba8dddec, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1627,7 +1631,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8850b9c58d4d75e458ba621b5767ea40, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.282
+      value: -5.221
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8850b9c58d4d75e458ba621b5767ea40, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1635,7 +1639,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8850b9c58d4d75e458ba621b5767ea40, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.392
+      value: -0.444
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8850b9c58d4d75e458ba621b5767ea40, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1673,6 +1677,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: train_extra_27
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 8850b9c58d4d75e458ba621b5767ea40, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b32602611fef993409502260c021372c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1961,6 +1969,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: train_extra_30 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 865f36493bedb4f41980a0d3ea59ee39, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: bbf77aeda5375334e9baa56f4629e58b, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2616,6 +2628,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: train_extra_17
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: aa953142c1929e24994ceb558456d370, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a6e659f6d46e6a84e8a25980515b3bac, type: 2}
     - target: {fileID: 8719554277038335773, guid: aa953142c1929e24994ceb558456d370, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
