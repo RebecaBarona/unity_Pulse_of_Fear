@@ -5,10 +5,10 @@ using UnityEngine;
 public class ElevatorAnimation : MonoBehaviour
 {
     public Animator elevator;
-    public Animator char1;
+
     public Animator char2;
     public DissolvingController dissolve;
-
+    public GameObject character;
     private bool animationPlayed = false;
 
     // Start is called before the first frame update
@@ -27,28 +27,42 @@ public class ElevatorAnimation : MonoBehaviour
     {
         if (!animationPlayed && other.gameObject.tag == "Player")
         {
-            elevator.SetBool("open", true);
-            //   char1.SetBool("anim", true);
-            char2.SetBool("anim", true);
-            dissolvecharacter();
-            //   Debug.LogError("elevator anim working");
+            StartCoroutine(doorOpening());
+        }
+    }
+    public IEnumerator doorOpening()
+    {
+        elevator.SetBool("open", true);
 
-            animationPlayed = true; // Set the flag to true to indicate animation played
+        char2.SetBool("anim", true);
+
+        Debug.Log("Elevator Triggered");
+
+        animationPlayed = true; // Set the flag to true to indicate animation played
+        yield return new WaitForSeconds(2);
+        character.transform.GetComponent<BoxCollider>().enabled = true;
+
+    }
+    public IEnumerator dissolvecharacter()
+    {
+        dissolve.GetComponent<DissolvingController>().dissolveCharacter();
+        yield return new WaitForSeconds(2); 
+        elevator.SetBool("open", false);    
+        char2.SetBool("anim", false);
+        character.transform.GetComponent<BoxCollider>().enabled = false;
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+           
         }
     }
 
-    public void dissolvecharacter()
+    public void DoorCLose()
     {
-        dissolve.GetComponent<DissolvingController>().dissolveCharacter();
+        StartCoroutine(dissolvecharacter());
+        Debug.Log("Door Closing");
     }
-
-    //private void OnTriggerExit(Collider other)
-    //{
-    //    if (other.gameObject.tag == "Player")
-    //    {
-    //        elevator.SetBool("open", false);
-    //        //    char1.SetBool("anim", false);
-    //        char2.SetBool("anim", false);
-    //    }
-    //}
 }

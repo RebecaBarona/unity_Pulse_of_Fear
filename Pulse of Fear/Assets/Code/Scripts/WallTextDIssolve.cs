@@ -13,7 +13,7 @@ public class WallTextDissolve : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private MaterialPropertyBlock materialPropertyBlock;
     private float dissolveTimer = 0f;
-
+    public GameObject Triggercollider;
     [Header("Audio Properties")]
     [SerializeField] float timer = 20;
     public float fadeDuration;
@@ -92,8 +92,8 @@ public class WallTextDissolve : MonoBehaviour
         spriteRenderer.SetPropertyBlock(materialPropertyBlock);
 
         // Wait for a specified period before calling the DisappearText function
-        yield return new WaitForSeconds(2);
-
+        yield return new WaitForSeconds(1);
+        Triggercollider.transform.GetComponent<BoxCollider>().enabled = true;
         // Call the DisappearText function
       //  DisappearText();
     }
