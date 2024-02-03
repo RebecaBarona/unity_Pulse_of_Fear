@@ -34,21 +34,24 @@ public class ElevatorAnimation : MonoBehaviour
     {
         elevator.SetBool("open", true);
 
-        char2.SetBool("anim", true);
 
+        character.transform.GetComponent<BoxCollider>().enabled = true;
         Debug.Log("Elevator Triggered");
 
-        animationPlayed = true; // Set the flag to true to indicate animation played
-        yield return new WaitForSeconds(2);
-        character.transform.GetComponent<BoxCollider>().enabled = true;
+        // Set the flag to true to indicate animation played
+       yield return null;
 
     }
     public IEnumerator dissolvecharacter()
     {
+        char2.SetBool("anim", true);
+        animationPlayed = true;
+        yield return new WaitForSeconds(3);
+   
         dissolve.GetComponent<DissolvingController>().dissolveCharacter();
-        yield return new WaitForSeconds(1.5f); 
+        yield return new WaitForSeconds(4f); 
         elevator.SetBool("open", false);    
-        char2.SetBool("anim", false);
+   
         character.transform.GetComponent<BoxCollider>().enabled = false;
     }
 

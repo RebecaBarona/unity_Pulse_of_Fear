@@ -4857,6 +4857,18 @@ PrefabInstance:
       value: -0.15682137
       objectReference: {fileID: 0}
     - target: {fileID: 1793003951998549971, guid: 8ed319880c79b234d9dea02f0ec35b2d, type: 3}
+      propertyPath: m_Size.y
+      value: 0.02306161
+      objectReference: {fileID: 0}
+    - target: {fileID: 1793003951998549971, guid: 8ed319880c79b234d9dea02f0ec35b2d, type: 3}
+      propertyPath: m_Center.y
+      value: 0.008653637
+      objectReference: {fileID: 0}
+    - target: {fileID: 1793003951998549971, guid: 8ed319880c79b234d9dea02f0ec35b2d, type: 3}
+      propertyPath: m_Center.z
+      value: 0.01379768
+      objectReference: {fileID: 0}
+    - target: {fileID: 1793003951998549971, guid: 8ed319880c79b234d9dea02f0ec35b2d, type: 3}
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
@@ -4869,12 +4881,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 927787a14e883b642a805b450e0f0347, type: 2}
     - target: {fileID: 3661751941506525564, guid: 8ed319880c79b234d9dea02f0ec35b2d, type: 3}
+      propertyPath: m_Size.y
+      value: 0.760818
+      objectReference: {fileID: 0}
+    - target: {fileID: 3661751941506525564, guid: 8ed319880c79b234d9dea02f0ec35b2d, type: 3}
       propertyPath: m_Size.z
-      value: 4.0998607
+      value: 4.477864
+      objectReference: {fileID: 0}
+    - target: {fileID: 3661751941506525564, guid: 8ed319880c79b234d9dea02f0ec35b2d, type: 3}
+      propertyPath: m_Center.y
+      value: -0.41845012
       objectReference: {fileID: 0}
     - target: {fileID: 3661751941506525564, guid: 8ed319880c79b234d9dea02f0ec35b2d, type: 3}
       propertyPath: m_Center.z
-      value: 0.13540626
+      value: -0.053595304
       objectReference: {fileID: 0}
     - target: {fileID: 4215493822856572635, guid: 8ed319880c79b234d9dea02f0ec35b2d, type: 3}
       propertyPath: m_Name
@@ -4939,6 +4959,10 @@ PrefabInstance:
     - target: {fileID: 6484354633760205775, guid: 8ed319880c79b234d9dea02f0ec35b2d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6962345484017302206, guid: 8ed319880c79b234d9dea02f0ec35b2d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7080947014027955824, guid: 8ed319880c79b234d9dea02f0ec35b2d, type: 3}
       propertyPath: m_StaticEditorFlags
