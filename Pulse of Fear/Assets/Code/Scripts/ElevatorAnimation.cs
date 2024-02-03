@@ -44,15 +44,18 @@ public class ElevatorAnimation : MonoBehaviour
     }
     public IEnumerator dissolvecharacter()
     {
-        char2.SetBool("anim", true);
-        animationPlayed = true;
-        yield return new WaitForSeconds(3);
-   
-        dissolve.GetComponent<DissolvingController>().dissolveCharacter();
-        yield return new WaitForSeconds(4f); 
-        elevator.SetBool("open", false);    
-   
-        character.transform.GetComponent<BoxCollider>().enabled = false;
+        if (animationPlayed == false)
+        {
+           // char2.SetBool("anim", true);
+            animationPlayed = true;
+
+            yield return new WaitForSeconds(2f);
+            dissolve.GetComponent<DissolvingController>().dissolveCharacter();
+            yield return new WaitForSeconds(3f);
+            elevator.SetBool("open", false);
+
+            character.transform.GetComponent<BoxCollider>().enabled = false;
+        }
     }
 
     private void OnTriggerExit(Collider other)

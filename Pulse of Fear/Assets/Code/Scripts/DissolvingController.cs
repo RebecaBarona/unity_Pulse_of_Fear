@@ -42,29 +42,33 @@ public class DissolvingController : MonoBehaviour
 
     public void dissolveCharacter()
     {
-        StartCoroutine(DissolveMaterial(0f));
+        StartCoroutine(DissolveMaterial(.1f));
     }
-     IEnumerator DissolveMaterial(float time)
+    IEnumerator DissolveMaterial(float time)
     {
         yield return new WaitForSeconds(time);
-     //   isDisolving = true;
-        if(materials.Length > 0)
+
+        if (!isDisolving && materials.Length > 0)
         {
+            isDisolving = true;
+
             float timer = 0;
             while (materials[0].GetFloat("_DissolveAmount") < 1)
             {
                 timer += dissolveRate;
 
-                for(int i = 0; i < materials.Length ; i++)
+                for (int i = 0; i < materials.Length; i++)
                 {
                     materials[i].SetFloat("_DissolveAmount", timer);
                 }
                 yield return new WaitForSeconds(refreshRate);
-
-              //  isDisolving =false; 
-                //this.gameObject.SetActive(false);
-
             }
+
+            isDisolving = false;
+            // Optionally, you can add code here to execute after the dissolve process is finished.
         }
     }
+
+
+
 }
