@@ -46,7 +46,7 @@ public class ElevatorAnimation : MonoBehaviour
     public IEnumerator dissolvecharacter()
     {
         dissolve.GetComponent<DissolvingController>().dissolveCharacter();
-        yield return new WaitForSeconds(2); 
+        yield return new WaitForSeconds(1.5f); 
         elevator.SetBool("open", false);    
         char2.SetBool("anim", false);
         character.transform.GetComponent<BoxCollider>().enabled = false;

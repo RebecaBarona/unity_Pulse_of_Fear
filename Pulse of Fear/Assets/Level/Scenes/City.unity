@@ -2285,8 +2285,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.074712105, y: 5.4775114, z: 10.379845}
-  m_Center: {x: 0.36887503, y: 2.2387557, z: -9.046013}
+  m_Size: {x: 0.074712105, y: 5.4775114, z: 7.717513}
+  m_Center: {x: 0.36887503, y: 2.2387557, z: -7.714847}
 --- !u!23 &1989809453
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4423,7 +4423,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8593522355823098330, guid: 9889dfaf292bd604db9ceddb845d5c80, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8756025894883073136, guid: 9889dfaf292bd604db9ceddb845d5c80, type: 3}
       propertyPath: m_IsActive
@@ -4832,9 +4832,49 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 3240176251817661455}
+    - target: {fileID: 1261642543230442599, guid: 8ed319880c79b234d9dea02f0ec35b2d, type: 3}
+      propertyPath: materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1261642543230442599, guid: 8ed319880c79b234d9dea02f0ec35b2d, type: 3}
+      propertyPath: materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 927787a14e883b642a805b450e0f0347, type: 2}
+    - target: {fileID: 1291829778710947141, guid: 8ed319880c79b234d9dea02f0ec35b2d, type: 3}
+      propertyPath: m_Size.x
+      value: 1.8482869
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291829778710947141, guid: 8ed319880c79b234d9dea02f0ec35b2d, type: 3}
+      propertyPath: m_Size.z
+      value: 1.7050772
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291829778710947141, guid: 8ed319880c79b234d9dea02f0ec35b2d, type: 3}
+      propertyPath: m_Center.x
+      value: 0.046278596
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291829778710947141, guid: 8ed319880c79b234d9dea02f0ec35b2d, type: 3}
+      propertyPath: m_Center.z
+      value: -0.15682137
+      objectReference: {fileID: 0}
     - target: {fileID: 1793003951998549971, guid: 8ed319880c79b234d9dea02f0ec35b2d, type: 3}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2919070565856762627, guid: 8ed319880c79b234d9dea02f0ec35b2d, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2919070565856762627, guid: 8ed319880c79b234d9dea02f0ec35b2d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 927787a14e883b642a805b450e0f0347, type: 2}
+    - target: {fileID: 3661751941506525564, guid: 8ed319880c79b234d9dea02f0ec35b2d, type: 3}
+      propertyPath: m_Size.z
+      value: 4.0998607
+      objectReference: {fileID: 0}
+    - target: {fileID: 3661751941506525564, guid: 8ed319880c79b234d9dea02f0ec35b2d, type: 3}
+      propertyPath: m_Center.z
+      value: 0.13540626
       objectReference: {fileID: 0}
     - target: {fileID: 4215493822856572635, guid: 8ed319880c79b234d9dea02f0ec35b2d, type: 3}
       propertyPath: m_Name
@@ -4842,7 +4882,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4215493822856572635, guid: 8ed319880c79b234d9dea02f0ec35b2d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4265964443886930861, guid: 8ed319880c79b234d9dea02f0ec35b2d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4911,6 +4951,10 @@ PrefabInstance:
     - target: {fileID: 7199819011504952524, guid: 8ed319880c79b234d9dea02f0ec35b2d, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.3498869
+      objectReference: {fileID: 0}
+    - target: {fileID: 7505075507534180972, guid: 8ed319880c79b234d9dea02f0ec35b2d, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8254971655010828809, guid: 8ed319880c79b234d9dea02f0ec35b2d, type: 3}
       propertyPath: m_StaticEditorFlags
