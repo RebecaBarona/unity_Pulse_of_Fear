@@ -1017,6 +1017,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c6ce91187a11ef7429954f9ee3e72b67, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ff703f0300bf88a4b9153b5980d0a238, type: 2}
     - target: {fileID: 919132149155446097, guid: c6ce91187a11ef7429954f9ee3e72b67, type: 3}
       propertyPath: m_Name
       value: mdl_sidewalk_01
@@ -1297,6 +1301,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 61ccdabb76f2ab440974121a3112a27d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ff703f0300bf88a4b9153b5980d0a238, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 61ccdabb76f2ab440974121a3112a27d, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: ff703f0300bf88a4b9153b5980d0a238, type: 2}
     - target: {fileID: 919132149155446097, guid: 61ccdabb76f2ab440974121a3112a27d, type: 3}
       propertyPath: m_Name
       value: mdl_bld_apartment_05
@@ -1607,35 +1619,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aa76f5d654c221646886e3251045f9bb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.450908
+      value: 4.15
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aa76f5d654c221646886e3251045f9bb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.0420985
+      value: -2.98
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aa76f5d654c221646886e3251045f9bb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.6612654
+      value: -3.94
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aa76f5d654c221646886e3251045f9bb, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.5
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aa76f5d654c221646886e3251045f9bb, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aa76f5d654c221646886e3251045f9bb, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.5
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aa76f5d654c221646886e3251045f9bb, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aa76f5d654c221646886e3251045f9bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aa76f5d654c221646886e3251045f9bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1645,10 +1657,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8273151417326543372, guid: aa76f5d654c221646886e3251045f9bb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8273151417326543372, guid: aa76f5d654c221646886e3251045f9bb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.09
+      objectReference: {fileID: 0}
+    - target: {fileID: -3168383156315874448, guid: aa76f5d654c221646886e3251045f9bb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9645369ba998a3641bbeba7653dbb7c3, type: 2}
     - target: {fileID: 919132149155446097, guid: aa76f5d654c221646886e3251045f9bb, type: 3}
       propertyPath: m_Name
       value: mdl_bld_apartment_06
       objectReference: {fileID: 0}
+    - target: {fileID: 6403738102900657873, guid: aa76f5d654c221646886e3251045f9bb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9645369ba998a3641bbeba7653dbb7c3, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

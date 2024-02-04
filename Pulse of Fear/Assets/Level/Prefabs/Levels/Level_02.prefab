@@ -3637,13 +3637,13 @@ Transform:
   - {fileID: 3972020920812350495}
   - {fileID: 789428396438875084}
   - {fileID: 4044390560588231764}
-  - {fileID: 9092153679757555114}
+  - {fileID: 8766090528355308098}
   - {fileID: 5699249397441141027}
   - {fileID: 8316255264200935095}
   - {fileID: 5364115769581344723}
   - {fileID: 3879456043082350903}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4217620776001563096
 GameObject:
@@ -9674,7 +9674,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: d95de743abf8a7e489c75d69721557a0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d2648af6b6f8f0646b11626ec5d8d99f, type: 2}
+      objectReference: {fileID: 2100000, guid: 67e963f444df9ed489ede32249e66a90, type: 2}
     - target: {fileID: 919132149155446097, guid: d95de743abf8a7e489c75d69721557a0, type: 3}
       propertyPath: m_Name
       value: mdl_bld_apartment_07 (1)
@@ -9749,6 +9749,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 770147e9bce135c45b12b51548095691, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ff703f0300bf88a4b9153b5980d0a238, type: 2}
     - target: {fileID: 919132149155446097, guid: 770147e9bce135c45b12b51548095691, type: 3}
       propertyPath: m_Name
       value: mdl_arc_01
@@ -9758,7 +9762,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 770147e9bce135c45b12b51548095691, type: 3}
---- !u!4 &9092153679757555114 stripped
+--- !u!4 &8766090528355308098 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 770147e9bce135c45b12b51548095691, type: 3}
   m_PrefabInstance: {fileID: 9092153679757555113}
