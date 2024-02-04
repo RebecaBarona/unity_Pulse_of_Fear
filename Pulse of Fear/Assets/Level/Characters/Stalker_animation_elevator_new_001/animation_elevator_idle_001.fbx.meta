@@ -45,7 +45,7 @@ ModelImporter:
       name: root|rigAction
       takeName: root|rigAction
       internalID: -5729030048419175771
-      firstFrame: 0
+      firstFrame: 60
       lastFrame: 300
       wrapMode: 0
       orientationOffsetY: 0
