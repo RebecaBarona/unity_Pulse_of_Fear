@@ -10,7 +10,7 @@ public class ElevatorAnimation : MonoBehaviour
     public DissolvingController dissolve;
     public GameObject character;
     private bool animationPlayed = false;
-
+    public AudioSource elevatorSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +32,8 @@ public class ElevatorAnimation : MonoBehaviour
     }
     public IEnumerator doorOpening()
     {
+        elevatorSound.Play();
+        yield return new WaitForSeconds(3f);
         elevator.SetBool("open", true);
 
 
@@ -39,7 +41,7 @@ public class ElevatorAnimation : MonoBehaviour
         Debug.Log("Elevator Triggered");
 
         // Set the flag to true to indicate animation played
-       yield return null;
+       
 
     }
     public IEnumerator dissolvecharacter()
@@ -49,7 +51,7 @@ public class ElevatorAnimation : MonoBehaviour
            // char2.SetBool("anim", true);
             animationPlayed = true;
 
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(6f);
             dissolve.GetComponent<DissolvingController>().dissolveCharacter();
             yield return new WaitForSeconds(3f);
             elevator.SetBool("open", false);
