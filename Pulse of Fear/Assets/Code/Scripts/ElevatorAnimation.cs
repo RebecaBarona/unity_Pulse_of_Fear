@@ -51,9 +51,9 @@ public class ElevatorAnimation : MonoBehaviour
            // char2.SetBool("anim", true);
             animationPlayed = true;
 
-            yield return new WaitForSeconds(6f);
+            yield return new WaitForSeconds(1f);
             dissolve.GetComponent<DissolvingController>().dissolveCharacter();
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(2f);
             elevator.SetBool("open", false);
 
             character.transform.GetComponent<BoxCollider>().enabled = false;

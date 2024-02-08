@@ -54151,7 +54151,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Train 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 914965993893751189, guid: 0480669d5ee6d6243ba326a651792881, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
