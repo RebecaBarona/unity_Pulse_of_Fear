@@ -53917,6 +53917,30 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 2012861697124193528, guid: 51fdb43ab8998cd4783bcca4fc11fbed, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.761003
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012861697124193528, guid: 51fdb43ab8998cd4783bcca4fc11fbed, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.08021879
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012861697124193528, guid: 51fdb43ab8998cd4783bcca4fc11fbed, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.19199231
+      objectReference: {fileID: 0}
+    - target: {fileID: 4581544043477738497, guid: 51fdb43ab8998cd4783bcca4fc11fbed, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.708622
+      objectReference: {fileID: 0}
+    - target: {fileID: 4581544043477738497, guid: 51fdb43ab8998cd4783bcca4fc11fbed, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.11524044
+      objectReference: {fileID: 0}
+    - target: {fileID: 4581544043477738497, guid: 51fdb43ab8998cd4783bcca4fc11fbed, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.1827132
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
