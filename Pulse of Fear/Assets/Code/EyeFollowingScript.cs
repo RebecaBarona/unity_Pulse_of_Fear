@@ -15,7 +15,7 @@ public class EyeFollowingPlayer : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("FakePlayer");
+        player = GameObject.FindGameObjectWithTag("Player");
         startPosition = transform.position;
         MeshRenderer renderer = GetComponent<MeshRenderer>();
         size = renderer.bounds.size;
