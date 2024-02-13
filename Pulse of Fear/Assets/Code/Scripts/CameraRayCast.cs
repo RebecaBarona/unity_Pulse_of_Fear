@@ -20,7 +20,7 @@ public class CameraRaycast : MonoBehaviour
         foreach (RaycastHit hit in hits)
         {
             Collider collider = hit.collider;
-            Debug.Log("Raycast hit collider: " + collider.name);
+          //  Debug.Log("Raycast hit collider: " + collider.name);
 
             // Check if the object hit by the ray has the TriggerObject script
             TriggerObject triggerObject = collider.GetComponent<TriggerObject>();

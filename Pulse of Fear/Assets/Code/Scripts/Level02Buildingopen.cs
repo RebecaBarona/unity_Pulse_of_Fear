@@ -12,8 +12,8 @@ public class AnimationTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player")) // Check if the collider is tagged as "Player"
         {
-          //  animator = GetComponent<Animator>(); // Get the Animator component attached to this GameObject
-            animator.Play(animationName); // Play the specified animation
+            //  animator = GetComponent<Animator>(); // Get the Animator component attached to this GameObject
+            animator.SetBool("wall", true); // Play the specified animation
         }
     }
 }

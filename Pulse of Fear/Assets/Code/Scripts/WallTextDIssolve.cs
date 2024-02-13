@@ -57,7 +57,7 @@ public class WallTextDissolve : MonoBehaviour
         //  Debug.Log(distance);
         if (distance <= distanceRequired && playTextAudio.hasPlayed == true)
         {
-            Debug.Log("playTextAudio.hasPlayed: " + playTextAudio.hasPlayed);
+          //  Debug.Log("playTextAudio.hasPlayed: " + playTextAudio.hasPlayed);
             // Additional logic if needed when player is within distance
             PlayDisappear();
 
