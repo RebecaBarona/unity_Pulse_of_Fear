@@ -5987,6 +5987,10 @@ PrefabInstance:
       propertyPath: m_Center.x
       value: 0.1626507
       objectReference: {fileID: 0}
+    - target: {fileID: 4923941172069740444, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5595490588472437874, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
       propertyPath: animator
       value: 
@@ -6002,6 +6006,10 @@ PrefabInstance:
     - target: {fileID: 7484824635305001538, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7944421534489796697, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9165930462828765394, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
       propertyPath: m_StaticEditorFlags
