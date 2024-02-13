@@ -5973,7 +5973,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4161820609941031527, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4391910801774808481, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -7714,7 +7714,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1178799865823974322, guid: d747b5df5d2618d47994b81eb6809bf9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4752881762690759950, guid: d747b5df5d2618d47994b81eb6809bf9, type: 3}
       propertyPath: m_Enabled
