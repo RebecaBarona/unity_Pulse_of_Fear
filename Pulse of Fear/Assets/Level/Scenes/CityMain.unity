@@ -204,6 +204,11 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &251717669 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8144997491338017980, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
+  m_PrefabInstance: {fileID: 6491915146360035719}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &506875375
 GameObject:
   m_ObjectHideFlags: 0
@@ -5968,7 +5973,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4161820609941031527, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4391910801774808481, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -5982,6 +5987,10 @@ PrefabInstance:
       propertyPath: m_Center.x
       value: 0.1626507
       objectReference: {fileID: 0}
+    - target: {fileID: 5595490588472437874, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 251717669}
     - target: {fileID: 6094637600428728890, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -7697,7 +7706,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1178799865823974322, guid: d747b5df5d2618d47994b81eb6809bf9, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4752881762690759950, guid: d747b5df5d2618d47994b81eb6809bf9, type: 3}
       propertyPath: m_Enabled
