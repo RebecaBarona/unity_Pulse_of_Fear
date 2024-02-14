@@ -6,6 +6,7 @@ public class EyeFollowingPlayer : MonoBehaviour
 {
     private GameObject player;
     private Vector3 eyeStartPosition;
+    private Vector3 previousPlayerPos;
     private float size;
     public float detectionRange = 3;
     public float speed = 0.8f;
@@ -19,7 +20,8 @@ public class EyeFollowingPlayer : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         MeshRenderer renderer = GetComponent<MeshRenderer>();
         Vector3 size = renderer.bounds.size * maxDistance;
-        this.eyeStartPosition = transform.position;
+        eyeStartPosition = transform.position;
+        previousPlayerPos = toLocal(player.transform.position);
         this.size = Mathf.Max(size.x, size.y, size.z);
     }
 
@@ -38,36 +40,34 @@ public class EyeFollowingPlayer : MonoBehaviour
 
         if (!isMoving)
         {
-            isMoving = currentPlayerPosition.x > currentEyePosition.x;
-            return;
+            isMoving = previousPlayerPos.x >= currentEyePosition.x && currentPlayerPosition.x <= currentEyePosition.x || previousPlayerPos.x <= currentEyePosition.x && currentPlayerPosition.x >= currentEyePosition.x;
         }
 
-
-        Vector3 newEyePositionLocal = new Vector3(currentPlayerPosition.x, currentEyePosition.y, currentEyePosition.z);
-        Vector3 newEyePositionGlobal = transform.TransformPoint(newEyePositionLocal);
-        float distanceEyeToStartPosition = Vector3.Distance(eyeStartPosition, newEyePositionGlobal);
-        bool inDetectionRange = Vector3.Distance(player.transform.position, transform.position) < detectionRange;
-
-        Debug.Log(size);
-        if (distancePlayerEyeX > -size && distancePlayerEyeX < size && distanceEyeToStartPosition < size && inDetectionRange)
+        if (isMoving)
         {
-            // Move our position a step closer to the target.
-            //float step = speed * Time.deltaTime; // Calculate distance to move
-            //transform.position = Vector3.MoveTowards(transform.position, newEyePositionGlobal, step);
-            transform.position = newEyePositionGlobal;
-        }
+            Vector3 newEyePositionLocal = new Vector3(Mathf.Clamp(currentPlayerPosition.x, -size, size), currentEyePosition.y, currentEyePosition.z);
+            Vector3 newEyePositionGlobal = transform.TransformPoint(newEyePositionLocal);
+            float distanceEyeToStartPosition = Vector3.Distance(eyeStartPosition, newEyePositionGlobal);
+            bool inDetectionRange = Vector3.Distance(player.transform.position, transform.position) < detectionRange;
 
-
-        if (!inDetectionRange)
-        {
-            float step = speed * Time.deltaTime; // Calculate distance to move
-            transform.position = Vector3.MoveTowards(transform.position, eyeStartPosition, step);
-
-            if (transform.position == eyeStartPosition)
+            if (distanceEyeToStartPosition < size && inDetectionRange)
             {
-                isMoving = false;
+                transform.position = newEyePositionGlobal;
             }
 
+
+            if (!inDetectionRange)
+            {
+                float step = speed * Time.deltaTime; // Calculate distance to move
+                transform.position = Vector3.MoveTowards(transform.position, eyeStartPosition, step);
+                if (transform.position == eyeStartPosition)
+                {
+                    isMoving = false;
+                }
+
+            }
         }
+
+        previousPlayerPos = currentPlayerPosition;
     }
 }
