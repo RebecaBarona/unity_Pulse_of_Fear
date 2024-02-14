@@ -60,6 +60,6 @@ Material:
     - _Offset: 0.069
     - _OutlineThickness: 0.064
     m_Colors:
-    - _OutlineColor: {r: 1, g: 0, b: 0, a: 1}
+    - _OutlineColor: {r: 0.8301887, g: 0.21537916, b: 0.21537916, a: 0.5803922}
     - _offset: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
