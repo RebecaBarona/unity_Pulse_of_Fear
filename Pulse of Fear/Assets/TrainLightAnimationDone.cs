@@ -4,24 +4,23 @@ using UnityEngine;
 
 public class TrainLightAnimationDone : StateMachineBehaviour
 {
-    public Animator stalkeranimator; // Reference to the Animator component
-    public string animationName = "StalkerStart"; // Name of the animation to play
-// OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
+    // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     //override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     //{
-    //    
+    //
     //}
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     //override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     //{
-    //    
+    //
     //}
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-    stalkeranimator.SetBool(animationName, true); // Play the specified animation
+        var controller = animator.gameObject.GetComponent<TrainStalkerAnimationController>();
+        controller?.StartStalkerAnimation();
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()

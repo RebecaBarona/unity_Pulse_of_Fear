@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8392155229717289727}
   - component: {fileID: 5768120446445820618}
+  - component: {fileID: 3002111931226603483}
   m_Layer: 0
   m_Name: Lights and Stalker
   m_TagString: Untagged
@@ -63,6 +64,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3002111931226603483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655956683495255775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6f3074e4d756c342abfaf5222e7909d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stalkerAnimator: {fileID: 1944376993901271797}
+  animationParameter: StalkerStart
 --- !u!1 &1975097806848001073
 GameObject:
   m_ObjectHideFlags: 0
@@ -27475,6 +27490,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ac068d4092fd6849b2bfc7f0492848a, type: 3}
+--- !u!95 &1944376993901271797 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 5ac068d4092fd6849b2bfc7f0492848a, type: 3}
+  m_PrefabInstance: {fileID: 5445209544259921764}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5484254350904688783 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5ac068d4092fd6849b2bfc7f0492848a, type: 3}
