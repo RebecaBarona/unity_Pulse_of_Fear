@@ -6,7 +6,7 @@ using UnityEngine;
 public class TrainLastSequence : MonoBehaviour
 {
     public Animator animator; // Reference to the Animator component
-    public string animationName = "TrainLightAnimation"; // Name of the animation to play
+    public string animationName = "TrainLightStart"; // Name of the animation to play
 
     private void OnTriggerEnter(Collider other)
     {
