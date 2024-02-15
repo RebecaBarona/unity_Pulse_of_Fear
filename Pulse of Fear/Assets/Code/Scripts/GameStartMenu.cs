@@ -23,10 +23,10 @@ public class GameStartMenu : MonoBehaviour
         startButton.onClick.AddListener(StartGame);
         quitButton.onClick.AddListener(QuitGame);
 
-        foreach (var item in returnButtons)
-        {
-            item.onClick.AddListener(EnableMainMenu);
-        }
+        //foreach (var item in returnButtons)
+        //{
+        //    item.onClick.AddListener(EnableMainMenu);
+        //}
     }
 
     public void QuitGame()

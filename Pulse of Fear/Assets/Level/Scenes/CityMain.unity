@@ -5919,6 +5919,10 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1669168218028871797, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 47fb9214f7684994c997cb7f39754390, type: 2}
     - target: {fileID: 1794790826539617529, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -6019,13 +6023,17 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4102143787414869629, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 927787a14e883b642a805b450e0f0347, type: 2}
     - target: {fileID: 4161820609941031527, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
       propertyPath: m_Name
       value: Level_02
       objectReference: {fileID: 0}
     - target: {fileID: 4161820609941031527, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4285006020328405506, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
       propertyPath: m_CastShadows
@@ -6082,6 +6090,10 @@ PrefabInstance:
     - target: {fileID: 7484824635305001538, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7519832457511018628, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.915
       objectReference: {fileID: 0}
     - target: {fileID: 7944421534489796697, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
       propertyPath: m_IsActive
@@ -7810,12 +7822,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1178799865823974322, guid: d747b5df5d2618d47994b81eb6809bf9, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3234778340433428550, guid: d747b5df5d2618d47994b81eb6809bf9, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 30a07d96202e0f443a28a8f5fae780e0, type: 3}
+      objectReference: {fileID: 21300000, guid: 9ba4e702a228cff419fd0627c2d36e2e, type: 3}
     - target: {fileID: 3234778340433428550, guid: d747b5df5d2618d47994b81eb6809bf9, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -7830,7 +7842,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3234778340433428550, guid: d747b5df5d2618d47994b81eb6809bf9, type: 3}
       propertyPath: m_WasSpriteAssigned
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4752881762690759950, guid: d747b5df5d2618d47994b81eb6809bf9, type: 3}
       propertyPath: m_Enabled
