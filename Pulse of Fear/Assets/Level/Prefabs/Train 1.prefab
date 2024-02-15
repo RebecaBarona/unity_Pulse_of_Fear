@@ -665,6 +665,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1355999587243018387}
   - component: {fileID: 8249196990477592758}
+  - component: {fileID: 2538677737954752198}
   m_Layer: 0
   m_Name: LightTrigger
   m_TagString: Untagged
@@ -708,6 +709,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5, y: 5, z: 5}
   m_Center: {x: -0.05644415, y: 0.005477787, z: 0.01379768}
+--- !u!114 &2538677737954752198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3615885401228066594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9078d83fb0f51042be71eeaa0e2402c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 5768120446445820618}
+  animationName: TrainLightAnimation
 --- !u!1 &3914093423684044451
 GameObject:
   m_ObjectHideFlags: 0
