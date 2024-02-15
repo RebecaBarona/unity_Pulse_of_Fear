@@ -45,7 +45,7 @@ ModelImporter:
       name: root|rigAction
       takeName: root|rigAction
       internalID: -5729030048419175771
-      firstFrame: 60
+      firstFrame: 0
       lastFrame: 300
       wrapMode: 0
       orientationOffsetY: 0
@@ -666,11 +666,6 @@ ModelImporter:
       position: {x: 0.000000014305114, y: 0.26866394, z: -0.000000047683713}
       rotation: {x: -0.026162246, y: -0.39410108, z: -0.033472646, w: -0.9180847}
       scale: {x: 1.000873, y: 1.1233327, z: 1.0098585}
-    - name: Cube
-      parentName: hand.r
-      position: {x: 0.017984996, y: 0.10198837, z: -0.051171873}
-      rotation: {x: 0.40244028, y: 0.5086434, z: 0.48034546, w: 0.5904168}
-      scale: {x: 0.98242277, y: 1.0149758, z: 1.0021318}
     - name: c_thumb1.r
       parentName: hand.r
       position: {x: 0.016944867, y: 0.015150628, z: -0.00011489391}
