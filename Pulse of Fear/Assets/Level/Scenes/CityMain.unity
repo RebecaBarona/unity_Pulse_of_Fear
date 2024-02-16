@@ -6669,7 +6669,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4161820609941031527, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4285006020328405506, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
       propertyPath: m_CastShadows
@@ -9242,7 +9242,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1178799865823974322, guid: d747b5df5d2618d47994b81eb6809bf9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3234778340433428550, guid: d747b5df5d2618d47994b81eb6809bf9, type: 3}
       propertyPath: m_Sprite
