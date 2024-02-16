@@ -5346,6 +5346,8 @@ MonoBehaviour:
   mainMenu: {fileID: 1163744328}
   startButton: {fileID: 448256129}
   quitButton: {fileID: 1101969936}
+  Lefthand: {fileID: 405551897}
+  Righthand: {fileID: 1344769466}
   returnButtons:
   - {fileID: 448256129}
   - {fileID: 1101969936}
