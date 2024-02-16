@@ -6461,7 +6461,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4161820609941031527, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4285006020328405506, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
       propertyPath: m_CastShadows
@@ -6726,6 +6726,30 @@ PrefabInstance:
     - target: {fileID: 5546135462051689081, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0.04390816
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794236795147488, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
+      propertyPath: m_Size.x
+      value: 1.4026473
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794236795147488, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
+      propertyPath: m_Size.y
+      value: 1.2247206
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794236795147488, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
+      propertyPath: m_Size.z
+      value: 1.6269181
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794236795147488, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
+      propertyPath: m_Center.x
+      value: -0.95467913
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794236795147488, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
+      propertyPath: m_Center.y
+      value: 0.6064605
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794236795147488, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
+      propertyPath: m_Center.z
+      value: -1.4601471
       objectReference: {fileID: 0}
     - target: {fileID: 5595490588472437874, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
       propertyPath: animator
@@ -7336,7 +7360,9 @@ PrefabInstance:
       value: -0.22244602
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3289629895255976631, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
+    - {fileID: 7306810194105443402, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2085455285571219273, guid: f66e6a369fa5ab24fa27d680648a342e, type: 3}
@@ -9034,7 +9060,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1178799865823974322, guid: d747b5df5d2618d47994b81eb6809bf9, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3234778340433428550, guid: d747b5df5d2618d47994b81eb6809bf9, type: 3}
       propertyPath: m_Sprite

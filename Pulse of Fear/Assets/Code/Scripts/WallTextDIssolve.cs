@@ -114,7 +114,7 @@ public class WallTextDissolve : MonoBehaviour
             Debug.Log(dissolveAmount);
 
 
-            if (dissolveAmount <= finalDissolveAmount - 0.1f)
+            if (dissolveAmount <= finalDissolveAmount - 0.3f)
             {
                 spriteRenderer.enabled = false;
             }
