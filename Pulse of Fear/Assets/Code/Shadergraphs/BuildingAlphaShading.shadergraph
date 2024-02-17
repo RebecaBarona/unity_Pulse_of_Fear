@@ -77,6 +77,9 @@
         },
         {
             "m_Id": "d1ad2eba62254941a66769c6cb9ce869"
+        },
+        {
+            "m_Id": "464d04feac3e4f3185d00e580042a959"
         }
     ],
     "m_GroupDatas": [],
@@ -252,6 +255,9 @@
             },
             {
                 "m_Id": "d23bdf322cd9411b814608be2778b0e8"
+            },
+            {
+                "m_Id": "464d04feac3e4f3185d00e580042a959"
             }
         ]
     },
@@ -688,6 +694,40 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.BlockNode",
+    "m_ObjectId": "464d04feac3e4f3185d00e580042a959",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "SurfaceDescription.Occlusion",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 0.0,
+            "y": 0.0,
+            "width": 0.0,
+            "height": 0.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "98e17e3670ae4f30a69bed4ba002fbb3"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_DismissedVersion": 0,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_SerializedDescriptor": "SurfaceDescription.Occlusion"
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
     "m_ObjectId": "467ad8dc557544dd979fe91e6e5f6fbc",
     "m_Id": 0,
@@ -860,7 +900,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "AlphaClipThreshold",
     "m_StageCapability": 2,
-    "m_Value": 0.029999999329447748,
+    "m_Value": 0.05000000074505806,
     "m_DefaultValue": 0.5,
     "m_Labels": []
 }
@@ -1099,10 +1139,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -799.0000610351563,
-            "y": 595.0,
+            "x": -800.9999389648438,
+            "y": 408.0,
             "width": 138.0,
-            "height": 34.0
+            "height": 33.999969482421878
         }
     },
     "m_Slots": [
@@ -1371,6 +1411,21 @@
     "m_CustomColors": {
         "m_SerializableColors": []
     }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "98e17e3670ae4f30a69bed4ba002fbb3",
+    "m_Id": 0,
+    "m_DisplayName": "Ambient Occlusion",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Occlusion",
+    "m_StageCapability": 2,
+    "m_Value": 1.0,
+    "m_DefaultValue": 1.0,
+    "m_Labels": []
 }
 
 {
@@ -1775,10 +1830,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -574.0000610351563,
-            "y": 534.0,
-            "width": 183.00003051757813,
-            "height": 251.00006103515626
+            "x": -573.9999389648438,
+            "y": 408.0,
+            "width": 183.0,
+            "height": 251.0
         }
     },
     "m_Slots": [
