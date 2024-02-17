@@ -32,7 +32,7 @@ public class VideoPlayerManager : MonoBehaviour
         if (clip.audioTrackCount > 0)
         {
             videoPlayer.EnableAudioTrack(0, true);
-            audioSource.clip = videoPlayer.GetAudioSample().audioClip;
+         //   audioSource.clip = videoPlayer.GetAudioSample().audioClip;
         }
         audioSource.Play();
         StartCoroutine(WaitForVideoToEnd());
