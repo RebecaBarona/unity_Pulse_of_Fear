@@ -2372,7 +2372,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 439608291}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1066213964}
+        m_TargetAssemblyTypeName: VideoPlayerManager, Assembly-CSharp
+        m_MethodName: SkipVideo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &439608291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3305,7 +3317,7 @@ MonoBehaviour:
   m_AllowHoverHapticsWhileSelecting: 0
   m_LineType: 0
   m_BlendVisualLinePoints: 1
-  m_MaxRaycastDistance: 10
+  m_MaxRaycastDistance: 1000
   m_RayOriginTransform: {fileID: 1700137299}
   m_ReferenceFrame: {fileID: 0}
   m_Velocity: 16
@@ -3740,7 +3752,7 @@ MonoBehaviour:
   m_AllowHoverHapticsWhileSelecting: 0
   m_LineType: 0
   m_BlendVisualLinePoints: 1
-  m_MaxRaycastDistance: 10
+  m_MaxRaycastDistance: 1000
   m_RayOriginTransform: {fileID: 79971435}
   m_ReferenceFrame: {fileID: 0}
   m_Velocity: 16

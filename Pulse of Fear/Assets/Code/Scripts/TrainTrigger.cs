@@ -31,12 +31,8 @@ public class TrainTrigger : MonoBehaviour
         {
             Train.SetActive(true);
             Train.GetComponent<Animator>().SetBool("MoveTrain",true);
-            
               //  Debug.LogError("Train Has come");
-           
         }
-
-      
     }
 
     public void DoorClose()

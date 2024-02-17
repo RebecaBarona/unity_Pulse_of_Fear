@@ -2,20 +2,21 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
-
+using UnityEngine.SceneManagement;
 public class VideoPlayerManager : MonoBehaviour
 {
     public VideoClip[] videoClips;
     private VideoPlayer videoPlayer;
-    private AudioSource audioSource;
     private int currentClipIndex = 0;
+    private float videoStartTime;
     public Button skipButton;
     public RawImage videoDisplay;
+    private AsyncOperation sceneLoadingOperation;
 
     void Start()
     {
+        LoadSceneAsync("CityMain");
         videoPlayer = GetComponentInChildren<VideoPlayer>();
-        audioSource = GetComponent<AudioSource>();
 
         // Set up the first video clip
         PlayVideoClip(videoClips[currentClipIndex]);
@@ -28,27 +29,34 @@ public class VideoPlayerManager : MonoBehaviour
     {
         videoPlayer.clip = clip;
         videoPlayer.Play();
-        audioSource.clip = null; // Clear previous audio clip
-        if (clip.audioTrackCount > 0)
-        {
-            videoPlayer.EnableAudioTrack(0, true);
-         //   audioSource.clip = videoPlayer.GetAudioSample().audioClip;
-        }
-        audioSource.Play();
-        StartCoroutine(WaitForVideoToEnd());
+        videoStartTime = Time.time;
+        StartCoroutine(WaitForVideo());
     }
 
-    void SkipVideo()
+    public void SkipVideo()
     {
+        StopAllCoroutines();
         MoveToNextClip();
     }
 
+    public void ActivateLoadedScene()
+    {
+        if (sceneLoadingOperation != null)
+        {
+            sceneLoadingOperation.allowSceneActivation = true; // Activate the scene
+        }
+    }
+    void LoadSceneAsync(string sceneName)
+    {
+        sceneLoadingOperation = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
+        sceneLoadingOperation.allowSceneActivation = false; // Allow scene activation as soon as it's ready
+    }
     void Update()
     {
         // Check for spacebar input to skip
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            MoveToNextClip();
+            SkipVideo();
         }
 
         RenderTexture renderTexture = videoPlayer.texture as RenderTexture;
@@ -60,7 +68,6 @@ public class VideoPlayerManager : MonoBehaviour
 
     void MoveToNextClip()
     {
-        StopAllCoroutines();
         currentClipIndex++;
         if (currentClipIndex < videoClips.Length)
         {
@@ -69,26 +76,21 @@ public class VideoPlayerManager : MonoBehaviour
         else
         {
             Debug.Log("No more videos to play.");
+            ActivateLoadedScene();
             // You can handle what to do when all videos are played
         }
     }
 
-    IEnumerator WaitForVideoToEnd()
+    IEnumerator WaitForVideo()
     {
-        while (videoPlayer.isPlaying)
+        while (true)
         {
+            if (Time.time - videoStartTime >= 10f)
+            {
+                MoveToNextClip();
+                break;
+            }
             yield return null;
-        }
-
-        if (currentClipIndex < videoClips.Length - 1)
-        {
-            currentClipIndex++;
-            PlayVideoClip(videoClips[currentClipIndex]);
-        }
-        else
-        {
-            Debug.Log("No more videos to play.");
-            // You can handle what to do when all videos are played
         }
     }
 }

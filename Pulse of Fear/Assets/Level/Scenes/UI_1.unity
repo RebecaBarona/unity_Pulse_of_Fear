@@ -436,7 +436,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 114600914}
   m_LocalRotation: {x: -0, y: 0.012045056, z: -0, w: -0.99992746}
-  m_LocalPosition: {x: 10.17, y: 835.2, z: -1101.9}
+  m_LocalPosition: {x: 10.17, y: 835.2, z: -1192.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5346,8 +5346,6 @@ MonoBehaviour:
   mainMenu: {fileID: 1163744328}
   startButton: {fileID: 448256129}
   quitButton: {fileID: 1101969936}
-  Lefthand: {fileID: 405551897}
-  Righthand: {fileID: 1344769466}
   returnButtons:
   - {fileID: 448256129}
   - {fileID: 1101969936}
