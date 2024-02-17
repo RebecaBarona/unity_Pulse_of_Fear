@@ -15,7 +15,7 @@ public class VideoPlayerManager : MonoBehaviour
 
     void Start()
     {
-        LoadSceneAsync("CityMain");
+      
         videoPlayer = GetComponentInChildren<VideoPlayer>();
 
         // Set up the first video clip
@@ -39,18 +39,8 @@ public class VideoPlayerManager : MonoBehaviour
         MoveToNextClip();
     }
 
-    public void ActivateLoadedScene()
-    {
-        if (sceneLoadingOperation != null)
-        {
-            sceneLoadingOperation.allowSceneActivation = true; // Activate the scene
-        }
-    }
-    void LoadSceneAsync(string sceneName)
-    {
-        sceneLoadingOperation = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
-        sceneLoadingOperation.allowSceneActivation = false; // Allow scene activation as soon as it's ready
-    }
+  
+   
     void Update()
     {
         // Check for spacebar input to skip
@@ -76,7 +66,7 @@ public class VideoPlayerManager : MonoBehaviour
         else
         {
             Debug.Log("No more videos to play.");
-            ActivateLoadedScene();
+            SceneManager.LoadScene(2);
             // You can handle what to do when all videos are played
         }
     }
