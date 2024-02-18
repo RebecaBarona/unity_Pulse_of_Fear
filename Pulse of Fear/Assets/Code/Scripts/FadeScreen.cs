@@ -10,7 +10,16 @@ public class FadeScreen : MonoBehaviour
     public AnimationCurve fadeCurve;
     private Graphic graphic;
 
+    private Animator animator;
+    public int sceneIndex;
+
     // Start is called before the first frame update
+
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     void Start()
     {
         graphic = GetComponent<Graphic>();
@@ -22,7 +31,12 @@ public class FadeScreen : MonoBehaviour
 
     public void FadeIn()
     {
-        Fade(1, 0);
+        animator.SetTrigger("FadeIn");
+    }
+
+    public void OnFadeComplete()
+    {
+        SceneTransitionManager.singleton.GoToScene(sceneIndex);
     }
 
     public void FadeOut()

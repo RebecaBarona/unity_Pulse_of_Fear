@@ -13,6 +13,7 @@ public class VideoPlayerManager : MonoBehaviour
     public RawImage videoDisplay;
     private AsyncOperation sceneLoadingOperation;
 
+    public FadeScreen fadeScreen;
     void Start()
     {
       
@@ -67,7 +68,8 @@ public class VideoPlayerManager : MonoBehaviour
         else
         {
             Debug.Log("No more videos to play.");
-            SceneManager.LoadScene(2);
+            fadeScreen.FadeIn();
+            //SceneManager.LoadScene(2);
             // You can handle what to do when all videos are played
         }
     }
