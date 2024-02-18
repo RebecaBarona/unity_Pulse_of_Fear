@@ -44,8 +44,8 @@ public class GameStartMenu : MonoBehaviour
     public void StartGame()
     {
         // HideAll();
-        fadeScreen.FadeIn();
-       // SceneTransitionManager.singleton.GoToScene(1);
+        //fadeScreen.FadeIn();
+        SceneTransitionManager.singleton.GoToScene(1);
     }
 
     public void HideAll()
