@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5839841, g: 0.015205352, b: 0.02622981, a: 1}
+  m_IndirectSpecularColor: {r: 0.34179854, g: 0.015991213, b: 0.017639203, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2351,7 +2351,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0.78431374}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -4680,10 +4680,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   videoClips:
   - {fileID: 32900000, guid: 2a744ccb948d66e4db73602c781bf79b, type: 3}
-  - {fileID: 32900000, guid: 149dedca773e7334fa8c4d9d6ba76a3c, type: 3}
-  - {fileID: 32900000, guid: 34bad2380626c1044bd9e320b246e088, type: 3}
-  - {fileID: 32900000, guid: bc061300e4e3a5d488353943c1561b65, type: 3}
-  - {fileID: 32900000, guid: 3a487d584fc19ae49a637af616ef95c1, type: 3}
+  - {fileID: 32900000, guid: 7ad21294bfe8f80499b6b005d01cd709, type: 3}
+  - {fileID: 32900000, guid: 98c9feef56c22dd458677b9bb28d6f1f, type: 3}
+  - {fileID: 32900000, guid: ef514e067bfd28b4ea070db35183d79c, type: 3}
+  - {fileID: 32900000, guid: c79070ff18f8df04fb70ca8f2e61721e, type: 3}
   skipButton: {fileID: 439608290}
   videoDisplay: {fileID: 773944209}
 --- !u!1 &1104167217
