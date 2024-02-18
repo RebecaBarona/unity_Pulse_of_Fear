@@ -19,7 +19,7 @@ public class GameStartMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        EnableMainMenu();
+        //EnableMainMenu();
 
         //Hook events
         startButton.onClick.AddListener(StartGame);
@@ -43,17 +43,17 @@ public class GameStartMenu : MonoBehaviour
 
     public void StartGame()
     {
-        HideAll();
+       // HideAll();
         SceneTransitionManager.singleton.GoToScene(1);
     }
 
     public void HideAll()
     {
-        mainMenu.SetActive(false);
+       // mainMenu.SetActive(false);
     }
 
     public void EnableMainMenu()
     {
-        mainMenu.SetActive(true);
+       // mainMenu.SetActive(true);
     }
 }

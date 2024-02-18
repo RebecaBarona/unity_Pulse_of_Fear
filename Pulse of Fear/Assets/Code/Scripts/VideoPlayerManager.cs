@@ -77,7 +77,7 @@ public class VideoPlayerManager : MonoBehaviour
         while (true)
         {
             videoStartTime += Time.deltaTime;
-            if (videoStartTime >= 5f)
+            if (videoStartTime >= 8f)
             {videoStartTime = 0;
                 MoveToNextClip();
                 break;
