@@ -22,8 +22,8 @@ public class FadeScreen : MonoBehaviour
 
     void Start()
     {
-        graphic = GetComponent<Graphic>();
-        graphic.enabled = false;
+        //graphic = GetComponent<Graphic>();
+        //graphic.enabled = false;
 
         // if (fadeOnStart)
         //     FadeIn();
