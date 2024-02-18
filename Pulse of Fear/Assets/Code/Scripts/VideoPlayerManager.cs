@@ -29,7 +29,8 @@ public class VideoPlayerManager : MonoBehaviour
     {
         videoPlayer.clip = clip;
         videoPlayer.Play();
-        videoStartTime = Time.time;
+
+        //videoStartTime = Time.time;
         StartCoroutine(WaitForVideo());
     }
 
@@ -75,8 +76,9 @@ public class VideoPlayerManager : MonoBehaviour
     {
         while (true)
         {
-            if (Time.time - videoStartTime >= 10f)
-            {
+            videoStartTime += Time.deltaTime;
+            if (videoStartTime >= 5f)
+            {videoStartTime = 0;
                 MoveToNextClip();
                 break;
             }
