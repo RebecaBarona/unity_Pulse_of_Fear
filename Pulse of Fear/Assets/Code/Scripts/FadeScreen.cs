@@ -1,6 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FadeScreen : MonoBehaviour
 {
@@ -8,24 +8,23 @@ public class FadeScreen : MonoBehaviour
     public float fadeDuration = 2;
     public Color fadeColor;
     public AnimationCurve fadeCurve;
-    public string colorPropertyName = "_Color";
-    private Renderer rend;
+    private Graphic graphic;
 
     // Start is called before the first frame update
     void Start()
     {
-       //rend = GetComponent<Renderer>();
-       // rend.enabled = false;
+        graphic = GetComponent<Graphic>();
+        graphic.enabled = false;
 
-       // if (fadeOnStart)
-       //     FadeIn();
+        // if (fadeOnStart)
+        //     FadeIn();
     }
 
     public void FadeIn()
     {
         Fade(1, 0);
     }
-    
+
     public void FadeOut()
     {
         Fade(0, 1);
@@ -33,20 +32,20 @@ public class FadeScreen : MonoBehaviour
 
     public void Fade(float alphaIn, float alphaOut)
     {
-        StartCoroutine(FadeRoutine(alphaIn,alphaOut));
+        StartCoroutine(FadeRoutine(alphaIn, alphaOut));
     }
 
-    public IEnumerator FadeRoutine(float alphaIn,float alphaOut)
+    public IEnumerator FadeRoutine(float alphaIn, float alphaOut)
     {
-        rend.enabled = true;
+        graphic.enabled = true;
 
         float timer = 0;
-        while(timer <= fadeDuration)
+        while (timer <= fadeDuration)
         {
             Color newColor = fadeColor;
             newColor.a = Mathf.Lerp(alphaIn, alphaOut, fadeCurve.Evaluate(timer / fadeDuration));
 
-            rend.material.SetColor(colorPropertyName, newColor);
+            graphic.color = newColor;
 
             timer += Time.deltaTime;
             yield return null;
@@ -54,9 +53,9 @@ public class FadeScreen : MonoBehaviour
 
         Color newColor2 = fadeColor;
         newColor2.a = alphaOut;
-        rend.material.SetColor(colorPropertyName, newColor2);
+        graphic.color = newColor2;
 
-        if(alphaOut == 0)
-            rend.enabled = false;
+        if (alphaOut == 0)
+            graphic.enabled = false;
     }
 }
